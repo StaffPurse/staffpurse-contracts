@@ -1,8 +1,8 @@
 <div align="center">
   <!-- 🖼️ Banner/Logo Placeholder -->
-  <img src="https://via.placeholder.com/800x200/1e1e2e/a6accd?text=StaffPurse+staffpurse-contracts" alt="🛡️ StaffPurse Contracts Banner" width="100%" />
+  <img src="https://via.placeholder.com/800x200/1e1e2e/a6accd?text=StaffPurse+staffpurse-contracts" alt="" width="100%" />
 
-  <h1>🛡️ StaffPurse Contracts</h1>
+  <h1>StaffPurse Contracts</h1>
   <p><strong>Soroban smart contracts for StaffPurse daily Merkle-root batching.</strong></p>
 
   <p>
