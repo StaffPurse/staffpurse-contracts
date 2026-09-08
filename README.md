@@ -1,51 +1,54 @@
-# StaffPurse Contracts
+<div align="center">
+  <!-- 🖼️ Banner/Logo Placeholder -->
+  <img src="https://via.placeholder.com/800x200/1e1e2e/a6accd?text=StaffPurse+staffpurse-contracts" alt="🛡️ StaffPurse Contracts Banner" width="100%" />
 
-> On-chain anchoring and transparency for the StaffPurse spend control platform.
+  <h1>🛡️ StaffPurse Contracts</h1>
+  <p><strong>Soroban smart contracts for StaffPurse daily Merkle-root batching.</strong></p>
 
-This repository contains the Soroban smart contracts that serve as the transparency layer for StaffPurse. By anchoring daily Merkle roots of off-chain spend records, we enable cryptographic, third-party auditing without ever exposing sensitive business or employee data to a public ledger.
+  <p>
+    <img src="https://img.shields.io/github/actions/workflow/status/StaffPurse/staffpurse-contracts/rust-ci.yml?branch=main" alt="CI Status" />
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
+  </p>
 
----
+  <p>
+    <a href="https://staffpurse.gitbook.io"><strong>Documentation</strong></a> ·
+    <a href="https://t.me/+Gflo5jZStw1jMjE0"><strong>Community Telegram</strong></a>
+  </p>
+</div>
 
-## 🛠 Tech Stack
+## 📖 Overview
 
-- **Language:** Rust
-- **Blockchain Framework:** Stellar / Soroban (`soroban-sdk`)
-- **Testing:** Rust native unit testing and Soroban test utilities
+The on-chain transparency layer for StaffPurse. By anchoring daily Merkle roots of off-chain spend records, we enable cryptographic, third-party auditing without exposing sensitive business or employee data to a public ledger.
 
----
+## 🏗 Architecture
 
-## 🚀 Getting Started
+Written in **Rust** using the `soroban-sdk`. The contract acts as an immutable key-value store. It exposes an `anchor_root` function strictly authenticated for the admin backend, and a public `get_root` function for verification queries.
 
-Because these are Soroban smart contracts, you need the Rust toolchain and the WebAssembly target installed, along with the Stellar CLI for local deployment and testing.
+## 🚀 Quick Start
 
-### 1. Prerequisites
-- [Rust](https://www.rust-lang.org/tools/install) (latest stable)
-- The WebAssembly target: `rustup target add wasm32-unknown-unknown`
-- [Stellar CLI](https://developers.stellar.org/docs/build/smart-contracts/getting-started/setup) for deploying and invoking contracts.
-
-### 2. Build the Contract
-Compile the contract to WebAssembly:
 ```bash
+# Add WebAssembly target
+rustup target add wasm32-unknown-unknown
+
+# Build the Soroban contract
 cargo build --target wasm32-unknown-unknown --release
-```
 
-### 3. Run the Tests
-Execute the native Rust unit tests to verify the anchoring logic and access controls:
-```bash
+# Run tests
 cargo test
 ```
 
----
+## 🤝 Contributing
 
-## ⚓ Anchoring & Auditing
+Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Security Policy](SECURITY.md) before submitting pull requests. All PRs must pass the CI gates and follow our code quality standards.
 
-The contract acts as a decentralized, immutable key-value store mapping dates to Merkle roots.
-- **`anchor_root(batch_date: Symbol, root: BytesN<32>)`**: Called exclusively by the authorized StaffPurse backend cron job to securely store a 32-byte cryptographic hash (the daily Merkle root).
-- **`get_root(batch_date: Symbol)`**: A public read function that allows any auditor or dashboard (like `staffpurse-web`) to fetch the anchored root for a specific day and verify individual transaction proofs.
+## 👥 Maintainers
 
----
+| Name | Contact | Role |
+| :--- | :--- | :--- |
+| Ademola | [Telegram](https://t.me/placeholder) | Core Maintainer |
 
-## 🏗 Architecture Reference
-- Read [ARCHITECTURE.md](ARCHITECTURE.md) for data flow and structural decisions.
-- Read [ARCHITECTURE_ESSENTIALS.md](ARCHITECTURE_ESSENTIALS.md) for a quick overview of critical constraints.
-- Read [PRD.md](PRD.md) for product scope and targeted use cases.
+## ✨ Contributors
+
+<a href="https://github.com/StaffPurse/staffpurse-contracts/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=StaffPurse/staffpurse-contracts" alt="Contributors" />
+</a>
