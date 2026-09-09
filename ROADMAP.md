@@ -28,7 +28,7 @@ Requirements to bring the repository to an institutional, auditable state that s
 ### 📋 Current Work (Tracked in GitHub Issues)
 - [x] **Issue #1 — Repository Hygiene & Security:** [Add SECURITY.md and configure repository hygiene](https://github.com/StaffPurse/staffpurse-contracts/issues/1) ✅ *(Completed by @mallison031)*
 - [ ] **Issue #2 — Storage Keys & Data Models:** [Define Soroban storage keys and core data structures](https://github.com/StaffPurse/staffpurse-contracts/issues/2)
-- [ ] **Issue #3 — Core Write Function:** [Implement anchor_root write function with admin auth](https://github.com/StaffPurse/staffpurse-contracts/issues/3)
+- [x] **Issue #3 — Core Write Function:** [Implement anchor_root write function with admin auth](https://github.com/StaffPurse/staffpurse-contracts/issues/3) ✅ *(Completed by @mallison031)*
 - [ ] **Issue #4 — Core Read Function:** [Implement get_root public read function](https://github.com/StaffPurse/staffpurse-contracts/issues/4)
 - [ ] **Issue #5 — Test Suite:** [Create unit tests for anchor and read flows](https://github.com/StaffPurse/staffpurse-contracts/issues/5)
 - [ ] **Issue #6 — Custom Errors & Events:** [Define custom ContractError enums and Soroban Events](https://github.com/StaffPurse/staffpurse-contracts/issues/6)
