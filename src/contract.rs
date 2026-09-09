@@ -1,5 +1,5 @@
-use soroban_sdk::{contract, contractimpl, BytesN, Env, Symbol};
 use crate::storage::DataKey;
+use soroban_sdk::{contract, contractimpl, BytesN, Env, Symbol};
 
 #[contract]
 pub struct AnchoringContract;

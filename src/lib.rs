@@ -1,8 +1,8 @@
 #![no_std]
 
-pub mod storage;
+pub mod contract;
 pub mod errors;
 pub mod events;
-pub mod contract;
+pub mod storage;
 
 pub use contract::*;
