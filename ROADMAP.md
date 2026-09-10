@@ -27,16 +27,16 @@ Requirements to bring the repository to an institutional, auditable state that s
 
 ### 📋 Current Work (Tracked in GitHub Issues)
 - [x] **Issue #1 — Repository Hygiene & Security:** [Add SECURITY.md and configure repository hygiene](https://github.com/StaffPurse/staffpurse-contracts/issues/1) ✅ *(Completed by @mallison031)*
-- [ ] **Issue #2 — Storage Keys & Data Models:** [Define Soroban storage keys and core data structures](https://github.com/StaffPurse/staffpurse-contracts/issues/2)
+- [x] **Issue #2 — Storage Keys & Data Models:** [Define Soroban storage keys and core data structures](https://github.com/StaffPurse/staffpurse-contracts/issues/2)
 - [x] **Issue #3 — Core Write Function:** [Implement anchor_root write function with admin auth](https://github.com/StaffPurse/staffpurse-contracts/issues/3) ✅ *(Completed by @mallison031)*
-- [ ] **Issue #4 — Core Read Function:** [Implement get_root public read function](https://github.com/StaffPurse/staffpurse-contracts/issues/4)
+- [x] **Issue #4 — Core Read Function:** [Implement get_root public read function](https://github.com/StaffPurse/staffpurse-contracts/issues/4)
 - [ ] **Issue #5 — Test Suite:** [Create unit tests for anchor and read flows](https://github.com/StaffPurse/staffpurse-contracts/issues/5)
-- [ ] **Issue #6 — Custom Errors & Events:** [Define custom ContractError enums and Soroban Events](https://github.com/StaffPurse/staffpurse-contracts/issues/6)
+- [x] **Issue #6 — Custom Errors & Events:** [Define custom ContractError enums and Soroban Events](https://github.com/StaffPurse/staffpurse-contracts/issues/6)
 - [x] **Issue #7 — Local Deployment Script:** [Write local deployment and initialization shell script](https://github.com/StaffPurse/staffpurse-contracts/issues/7) ✅ *(Completed by @mallison031)*
-- [ ] **Issue #8 — External Documentation Content:** [Write GitBook external documentation content](https://github.com/StaffPurse/staffpurse-contracts/issues/8)
-- [ ] **Issue #11 — Project Scaffolding:** [Initialize Cargo workspace and Soroban contract crate structure](https://github.com/StaffPurse/staffpurse-contracts/issues/11)
+- [x] **Issue #8 — External Documentation Content:** [Write GitBook external documentation content](https://github.com/StaffPurse/staffpurse-contracts/issues/8)
+- [x] **Issue #11 — Project Scaffolding:** [Initialize Cargo workspace and Soroban contract crate structure](https://github.com/StaffPurse/staffpurse-contracts/issues/11)
 - [x] **Issue #12 — GitHub Actions CI Pipeline:** [Set up GitHub Actions CI for Cargo test, clippy, and fmt](https://github.com/StaffPurse/staffpurse-contracts/issues/12) ✅ *(Completed by @mallison031)*
-- [ ] **Issue #13 — Release Tagging & Deployment Guide:** [Create testnet release tagging workflow and deployment documentation](https://github.com/StaffPurse/staffpurse-contracts/issues/13)
+- [x] **Issue #13 — Release Tagging & Deployment Guide:** [Create testnet release tagging workflow and deployment documentation](https://github.com/StaffPurse/staffpurse-contracts/issues/13)
 
 ### 🔍 Identified Gaps & Action Items
 - [x] ~~**GAP-C1: Project Scaffolding (`Cargo.toml` & Crate Structure)**~~ → Created as **Issue #11**
