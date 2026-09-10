@@ -16,8 +16,8 @@ Pre-implementation checks and parameter validation before writing Soroban smart 
 
 ### 🔍 Identified Gaps & Action Items (Now Tracked in GitHub Issues)
 - [x] **Issue #10 — Accensa Logic Audit & Testnet Funding Spike:** [Audit Accensa contracts for reusable Soroban anchoring patterns and testnet keypair funding](https://github.com/StaffPurse/staffpurse-contracts/issues/10) ✅ *(Completed by @mallison031)*
-- [ ] **Network & Keypair Strategy:** Finalize testnet standalone account vs shared testnet RPC keypair funding (`Friendbot` keypair management).
-- [ ] **Points Allocation Budget:** Confirm exact Wave 1 points ceiling for `staffpurse-contracts` on the Drips dashboard (target: ~25,000 pts).
+- [x] **Network & Keypair Strategy:** Finalize testnet standalone account vs shared testnet RPC keypair funding (`Friendbot` keypair management).
+- [x] **Points Allocation Budget:** Confirm exact Wave 1 points ceiling for `staffpurse-contracts` on the Drips dashboard (target: ~25,000 pts).
 
 ---
 
