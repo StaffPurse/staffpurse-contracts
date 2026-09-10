@@ -6,7 +6,7 @@
   <p><strong>Soroban smart contracts for StaffPurse daily Merkle-root batching.</strong></p>
 
   <p>
-    <img src="https://img.shields.io/github/actions/workflow/status/StaffPurse/staffpurse-contracts/rust-ci.yml?branch=main" alt="CI Status" />
+    <img src="https://img.shields.io/github/actions/workflow/status/StaffPurse/staffpurse-contracts/contracts-ci.yml?branch=main" alt="CI Status" />
     <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" />
   </p>
 
@@ -44,5 +44,5 @@ Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Security Policy]
 ## ✨ Contributors
 
 <a href="https://github.com/StaffPurse/staffpurse-contracts/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=StaffPurse/staffpurse-contracts" alt="Contributors" />
+  <img src="https://contrib.rocks/image?repo=StaffPurse/staffpurse-contracts&v=1" alt="Contributors" />
 </a>
