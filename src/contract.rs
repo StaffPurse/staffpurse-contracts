@@ -16,13 +16,17 @@ impl StaffPurseAnchor {
         Ok(())
     }
 
-    pub fn anchor_root(env: Env, batch_date: Symbol, root: BytesN<32>) -> Result<(), ContractError> {
+    pub fn anchor_root(
+        env: Env,
+        batch_date: Symbol,
+        root: BytesN<32>,
+    ) -> Result<(), ContractError> {
         let admin: Address = env
             .storage()
             .instance()
             .get(&DataKey::Admin)
             .ok_or(ContractError::NotInitialized)?;
-        
+
         admin.require_auth();
 
         let key = DataKey::BatchDate(batch_date.clone());
@@ -30,7 +34,7 @@ impl StaffPurseAnchor {
             return Err(ContractError::AlreadyAnchored);
         }
 
-        env.storage().persistent().set(&key, &root.clone());
+        env.storage().persistent().set(&key, &root);
         publish_anchored_event(&env, batch_date, root);
 
         Ok(())
