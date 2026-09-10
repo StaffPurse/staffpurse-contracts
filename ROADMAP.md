@@ -42,7 +42,7 @@ Requirements to bring the repository to an institutional, auditable state that s
 - [x] ~~**GAP-C1: Project Scaffolding (`Cargo.toml` & Crate Structure)**~~ → Created as **Issue #11**
 - [x] ~~**GAP-C2: GitHub Actions CI Pipeline (`.github/workflows/ci.yml`)**~~ → Created as **Issue #12**
 - [x] ~~**GAP-C3: Release Tagging (`v0.1.0`) & Guide**~~ → Created as **Issue #13**
-- [ ] **GAP-C4: GitBook Site Hosting:** Link `docs/` or setup GitBook sync to provide a live documentation URL for Wave reviewers.
+- [x] ~~**GAP-C4: GitBook Site Hosting**~~ → Created as **Issue #23** (Hosted via GitHub pages on `staffpurse-web`)
 
 ---
 
