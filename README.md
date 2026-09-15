@@ -1,6 +1,6 @@
 <div align="center">
   <!-- 🖼️ Banner/Logo Placeholder -->
-  <img src="https://placehold.co/800x200/1e1e2e/a6accd.svg?text=StaffPurse+staffpurse-contracts" alt="" width="100%" />
+  <img src="https://placehold.co/800x200/1e1e2e/a6accd.svg?text=staffpurse-contracts" alt="" width="100%" />
 
   <h1>StaffPurse Contracts</h1>
   <p><strong>Soroban smart contracts for StaffPurse daily Merkle-root batching.</strong></p>
