@@ -11,8 +11,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  lint-and-test:
-    name: Lint & Test Soroban Contracts
+  lint:
+    name: Lint Soroban Contracts
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -35,6 +35,24 @@ jobs:
 
       - name: Run Clippy linter
         run: cargo clippy --workspace --all-targets -- -D warnings
+
+  test:
+    name: Test Soroban Contracts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: stable
+          targets: wasm32-unknown-unknown
+
+      - name: Cache cargo dependencies
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: .
 
       - name: Run unit and integration tests
         run: cargo test --workspace
